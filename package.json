@@ -1,0 +1,28 @@
+{
+  "name": "sgb-dataconnector-http",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/sgb-datasource-json.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SYNERGY-GB/sgb-datasource-json.git"
+  },
+  "author": "",
+  "license": "Propietary",
+  "bugs": {
+    "url": "https://github.com/SYNERGY-GB/sgb-datasource-json/issues"
+  },
+  "homepage": "https://github.com/SYNERGY-GB/sgb-datasource-json",
+  "devDependencies": {
+    "browserify": "^9.0.3",
+    "gulp": "^3.8.11",
+    "vinyl-transform": "^1.0.0"
+  },
+  "dependencies": {
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

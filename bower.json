@@ -1,0 +1,24 @@
+{
+  "name": "sgb-dataconnector-http",
+  "version": "1.0.0",
+  "authors": [
+    "Saul Hernandez <sauldhernandez@gmail.com>"
+  ],
+  "description": "Allows the reading of json data files on megazord apps.",
+  "main": "dist/sgb-dataconnector-http.js",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "Propietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "megazord-framework": "git@github.com:SYNERGY-GB/megazord-framework.git#1.0"
+  }
+}
