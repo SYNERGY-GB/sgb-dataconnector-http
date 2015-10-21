@@ -4,12 +4,11 @@ angular.module('sgb-dataconnector-http', ['megazord'])
     .factory('sgb-dataconnector-http', ['$http', function ($http) {
         return {
             getData: function (params, event) {
-                 var httpParams = _.cloneDeep(params);
+                var httpParams = _.cloneDeep(params);
                 //Params must have the same syntax as the $http config object
                 if (!httpParams.data && event && event.params) {
                     httpParams.data = event.params;
                 }
-                //console.log("http connector" ,params); 
                 return $http(httpParams);
             }
         } ;
