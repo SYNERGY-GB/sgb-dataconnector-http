@@ -7,7 +7,13 @@ angular.module('sgb-dataconnector-http', ['megazord'])
             getData: function (params, event) {
                 var httpParams = _.cloneDeep(params);
                 //Params must have the same syntax as the $http config object
+                if (!params.url) {
+                    console.error('url is not defined'); 
+                    return; 
+                }
+                var url = _.template(params.url); 
                 if (!httpParams.data && event && event.params) {
+                    httpParams.url = url(event.params); 
                     httpParams.data = event.params;
                 }
                 return $http(httpParams);
